@@ -61,6 +61,10 @@ section.cat{padding:28px 0 12px;scroll-margin-top:76px}
 .about p{margin:0;color:#d8ead0;max-width:640px}
 .about a{color:var(--lime);font-weight:700}
 
+.social{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.about .social a{background:var(--lime);color:var(--ink);text-decoration:none;font-weight:800;font-size:15px;padding:9px 16px;border-radius:999px}
+.about .social a:hover{background:#fff}
+
 /* Textseiten (Impressum, Datenschutz, Hinweis) */
 main.text{padding:48px 0 24px;max-width:760px}
 main.text h1{font-size:38px;line-height:1.1;margin:0 0 20px;letter-spacing:-.01em}
