@@ -1,19 +1,19 @@
-# Wurzelwissenschaft – Website-Anleitung
+# Wurzelwissenschaft – Affiliate-Website
 
-## 1. Vor dem Hochladen
-- **Logo:** Dein Logo als `logo.png` in den Ordner `bilder/` legen (quadratisch, z. B. 512×512 px). Es erscheint dann automatisch oben, im Titelbereich und bei „Über mich“. Solange keins da ist, wird ein Platzhalter-Logo gezeigt.
-- **Impressum & Datenschutz:** gelb markierte Platzhalter (Adresse, PLZ, E-Mail) in `impressum.html` und `datenschutz.html` ersetzen.
-- **Links testen:** Jeden „Preis auf Amazon ansehen“-Button einmal anklicken und prüfen, ob das richtige Produkt kommt.
+Einfache, statische Website (HTML + CSS), veröffentlicht über GitHub Pages
+(Workflow `.github/workflows/static.yml`, startet automatisch bei jedem Push auf `main`).
 
-## 2. Produkte ändern oder hinzufügen
-Alles steht in `js/produkte.js` (Kategorien: licht, erde, moos). Block kopieren, Komma dazwischen, anpassen.
+## Dateien
+- `index.html` – Startseite mit allen Produkten (Licht, Erde, Moos, Messen)
+- `impressum.html`, `datenschutz.html`, `affiliate-hinweis.html` – Pflichtseiten
+- `css/style.css` – Design
+- `bilder/logo.png` – Logo
 
-## 3. Auf GitHub Pages veröffentlichen
-1. github.com → **+ → New repository** → Name `wurzelwissenschaft`, **Public** → Create.
-2. **uploading an existing file** → den *Inhalt* dieses Ordners hineinziehen → **Commit changes**.
-3. **Settings → Pages** → Source: **Deploy from a branch**, Branch **main**, Ordner **/ (root)** → **Save**.
-4. Nach 1–2 Minuten online: `https://DEIN-GITHUB-NAME.github.io/wurzelwissenschaft/`
+## Produkt hinzufügen
+In `index.html` eine `<article class="card">…</article>` kopieren, Text und Link anpassen.
+Links immer mit `target="_blank" rel="sponsored nofollow noopener"` und dem ✱ im Button.
 
-## 4. Danach
-- Link in die Bio von Instagram, TikTok, YouTube und Facebook setzen.
-- Link im **Amazon PartnerNet → Websites und Apps** eintragen.
+## Vor dem Teilen
+- Gelb markierte Platzhalter (Adresse, E-Mail) in `impressum.html` und `datenschutz.html` ersetzen.
+- Website-Adresse im Amazon PartnerNet unter „Websites und Apps“ eintragen.
+- Keine Preise und keine Amazon-Produktfotos auf die Seite kopieren.
