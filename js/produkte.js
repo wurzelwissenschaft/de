@@ -1,90 +1,70 @@
 const products = {
   licht: [
     {
-      name: 'LED Pflanzenlampe 120 cm',
+      name: 'SANSI T10 Stehende Pflanzenlampe Vollspektrum, 55W Grow Lampe, Fernbedienung',
       tag: 'Top Pick',
+      price: '€49',
+      description: 'Vollspektrum-LED mit Fernbedienung für kräftigere Triebe und besseres Wachstum im Winter.',
+      image: 'bilder/lampe-steh.svg',
+      link: 'https://link.amazon/B09x9j1CM'
+    },
+    {
+      name: 'Pflanzenlampe LED, 243 LEDs Pflanzenlicht mit 3 Beleuchtungsmodi Rot Blau Vollspektrum',
+      tag: 'Vollspektrum',
       price: '€39',
-      description: 'Breite, gleichmäßige Ausleuchtung für Balkon, Fensterbank und kleine Zimmerpflanzen.',
+      description: 'Starkes Indoor-Wachstumslight mit 3 Modi und Timer für Zimmerpflanzen und kleine Kulturen.',
       image: 'bilder/lampe-steh.svg',
-      link: 'https://www.amazon.de/'
-    },
-    {
-      name: 'Nano Grow Mini',
-      tag: 'Klein & stark',
-      price: '€24',
-      description: 'Perfekt für kleine Räume, Schreibtisch und Blühpflanzen im Winter.',
-      image: 'bilder/lampe-steh.svg',
-      link: 'https://www.amazon.de/'
-    },
-    {
-      name: 'Full Spectrum Tower',
-      tag: 'Für große Pflanzen',
-      price: '€59',
-      description: 'Stabile, energieeffiziente Lichtlösung mit langlebigem LED-Panel.',
-      image: 'bilder/lampe-steh.svg',
-      link: 'https://www.amazon.de/'
+      link: 'https://link.amazon/B063tW7Vw'
     }
   ],
   erde: [
     {
-      name: 'Aroma-Blumenerde',
+      name: 'Westland Zimmerpflanzen Erde, 8 l – Erde mit Tongranulat für ein gesundes Wachstum',
       tag: 'Allrounder',
-      price: '€12',
-      description: 'Feuchtigkeitsspeichernd und leicht, ideal für Topfpflanzen mit regelmäßiger Pflege.',
+      price: '€14',
+      description: 'Ideale Wasser- und Nährstoffverteilung für gesunde Zimmerpflanzen mit stabiler Struktur.',
       image: 'bilder/erde-mineral.svg',
-      link: 'https://www.amazon.de/'
+      link: 'https://link.amazon/B0i6dtjh7'
     },
     {
-      name: 'Mineralisches Substrat',
+      name: 'Floragard Green Jungle Mix, mineralisches Pflanzsubstrat aus Bims, Zeolith und Lava',
       tag: 'Luftig',
       price: '€18',
-      description: 'Verbessert die Drainage und sorgt dafür, dass Wurzeln nicht in Staunässe stehen.',
+      description: 'Mineralisches Substrat für gute Drainage, Wurzelatmung und weniger Staunässe.',
       image: 'bilder/erde-mineral.svg',
-      link: 'https://www.amazon.de/'
-    },
-    {
-      name: 'Pflanzensubstrat Mix',
-      tag: 'Für Zimmerpflanzen',
-      price: '€16',
-      description: 'Ausgewogene Mischung aus Humus, Mineralien und Kokosfasern für gesunde Wurzeln.',
-      image: 'bilder/erde-mineral.svg',
-      link: 'https://www.amazon.de/'
+      link: 'https://link.amazon/B0fd37O3R'
     }
   ],
   moos: [
     {
-      name: 'Sphagnum-Moos',
+      name: 'Sphagnum Moosziegel Chile 100g · ergibt 5 L langfaseriges Premium Torfmoos',
       tag: 'Bewurzeln',
-      price: '€9',
-      description: 'Schnell feucht, ideal zum Bewurzeln von Ablegern und für Orchideen.',
+      price: '€12',
+      description: 'Langfaseriges, feuchtigkeitsreiches Torfmoos für Ableger, Moosstäbe und Orchideen.',
       image: 'bilder/moos.svg',
-      link: 'https://www.amazon.de/'
-    },
+      link: 'https://link.amazon/B0e5CLso4'
+    }
+  ],
+  sensoren: [
     {
-      name: 'Moosstab Premium',
+      name: '4 in 1 Pflanzenfeuchtigkeitsmesser Gießanzeiger mit Bodenmonitor für Feuchtigkeit, Licht, Fruchtbarkeit und Temperatur',
       tag: 'Praktisch',
-      price: '€14',
-      description: 'Für Monstera, Philodendron und andere Pflanzen, die zusätzliche Feuchtigkeit lieben.',
-      image: 'bilder/moos.svg',
-      link: 'https://www.amazon.de/'
-    },
-    {
-      name: 'Orchid Moss Blend',
-      tag: 'Für Orchideen',
-      price: '€15',
-      description: 'Feuchtigkeitsreich und luftdurchlässig: perfekt für tropische Gewächse.',
-      image: 'bilder/moos.svg',
-      link: 'https://www.amazon.de/'
+      price: '€29',
+      description: 'Überwacht automatisch Bodenfeuchte, Licht, Nährstoffe und Temperatur mit einfacher App-Auswertung.',
+      image: '',
+      link: 'https://link.amazon/B0c9PXnh4'
     }
   ]
 };
 
 function buildCard(item) {
+  const imageMarkup = item.image
+    ? `<div class="thumb"><img src="${item.image}" alt="${item.name}"></div>`
+    : `<div class="thumb empty">Kein Bild</div>`;
+
   return `
     <article class="product-card">
-      <div class="thumb">
-        <img src="${item.image}" alt="${item.name}">
-      </div>
+      ${imageMarkup}
       <div class="body">
         <div class="meta">
           <span class="tag">${item.tag}</span>
@@ -114,5 +94,3 @@ document.addEventListener('DOMContentLoaded', () => {
     year.innerHTML = 'Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. · © ' + new Date().getFullYear() + ' Wurzelwissenschaft – Nirjhar Basak';
   }
 });
-
-
