@@ -84,3 +84,47 @@ footer p{margin:12px 0 0}
   .card{padding:20px}
   .about{padding:24px}
 }
+
+/* Ratgeber-Karten auf der Startseite */
+.guide{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:8px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.guide:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(23,63,41,.08)}
+.guide h3{margin:0;font-size:20px;line-height:1.25}
+.guide p{margin:0;color:var(--muted);font-size:15.5px;flex:1}
+.guide span{font-weight:700;color:var(--ink-2)}
+
+/* Ratgeber-Artikel */
+main.article{max-width:760px;padding:32px 0 24px}
+.crumbs{font-size:14px;color:var(--muted);margin-bottom:18px}
+.crumbs a{text-decoration:none;font-weight:600}
+main.article h1{font-size:clamp(30px,5vw,44px);line-height:1.1;letter-spacing:-.02em;margin:10px 0 18px}
+main.article h2{font-size:24px;margin:40px 0 10px;letter-spacing:-.01em}
+main.article p,main.article li{color:#2c4a38;font-size:17px}
+main.article a:not(.btn){color:var(--ink-2);font-weight:600}
+.lead{background:#fff;border:1px solid var(--line);border-left:5px solid var(--lime);border-radius:14px;padding:16px 20px}
+.steps li{margin-bottom:10px}
+.tip{background:#eef7e3;border-radius:14px;padding:14px 18px}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;font-size:15.5px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--ink);color:#fff}
+.video-box{margin:36px 0;background:var(--ink);color:#fff;border-radius:24px;padding:28px}
+.video-box h2{color:#fff;margin:6px 0 8px!important}
+.video-box p{color:#d8ead0!important}
+.video-box .eyebrow{color:var(--lime)}
+.video-box .social a{background:var(--lime);color:var(--ink)!important;text-decoration:none;font-weight:800;font-size:15px;padding:9px 16px;border-radius:999px}
+.video-box .social a:hover{background:#fff}
+.mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.mini{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.mini h3{margin:0;font-size:17px;line-height:1.3}
+.mini p{margin:0;font-size:15px!important;color:var(--muted)!important;flex:1}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:10px 0 0}
+.related{margin:40px 0 0;font-size:16px}
+.related a{margin-left:10px}
+main.article .about p{color:#d8ead0}
+main.article .about a{color:var(--ink)}
+@media (max-width:600px){
+  table{min-width:560px;font-size:14.5px}
+  .video-box{padding:22px}
+}
