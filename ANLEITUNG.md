@@ -18,6 +18,11 @@ Links immer mit `target="_blank" rel="sponsored nofollow noopener"` und dem ✱ 
 - Website-Adresse im Amazon PartnerNet unter „Websites und Apps“ eintragen.
 - Keine Preise und keine Amazon-Produktfotos auf die Seite kopieren.
 
+## Ratgeber-Artikel
+- `trauermuecken-loswerden.html`, `pflanzenlampe-winter.html`, `gelbe-blaetter-zimmerpflanzen.html`
+- Neuer Artikel: eine bestehende Datei kopieren, Title, Description, Canonical, og:url und JSON-LD anpassen, auf der Startseite unter `#ratgeber` eine Karte ergänzen und die Seite in `sitemap.xml` eintragen.
+- Videos werden nur verlinkt (nicht eingebettet) – so lädt die Seite keine Daten von YouTube & Co. und die Datenschutzerklärung bleibt gültig.
+
 ## SEO
 - Jede Seite hat `<title>`, `<meta name="description">` und `<link rel="canonical">`. Bei neuen Seiten mitkopieren und anpassen.
 - Impressum, Datenschutz und Affiliate-Hinweis stehen auf `noindex` (sollen nicht in Google erscheinen).
