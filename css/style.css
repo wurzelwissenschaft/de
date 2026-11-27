@@ -156,7 +156,7 @@ main.db button:hover{border-color:var(--ink-2)}
 .db-facts dt{color:var(--muted)}
 .db-facts dd{margin:0;min-width:0;color:#2c4a38}
 .db-facts a{color:var(--ink-2);font-weight:600}
-.db-sun{letter-spacing:2px;color:#c79a1b;margin-right:6px}
+.db-sun{letter-spacing:2px;color:var(--ink-2);margin-right:6px}
 .db-sun i{font-style:normal;color:var(--line)}
 .db-chip{display:inline-block;background:var(--bg);border-radius:999px;padding:1px 10px;margin:2px 4px 2px 0;font-size:14.5px}
 .db-more{display:block;margin:24px auto 0}
