@@ -35,3 +35,4 @@ Links immer mit `target="_blank" rel="sponsored nofollow noopener"` und dem ✱ 
 - `zimmerpflanzen-datenbank.html` – 500 Zimmerpflanzen mit Filtern (Licht, Zimmer, Kategorie, Wasser, Luftfeuchtigkeit, Pflanzenlampe). Design unter „Pflanzen-Datenbank“ in `css/style.css`.
 - Die Pflanzen stehen als Liste `DATA` im `<script>` am Ende der Datei: `[Deutscher Name, Wissenschaftlicher Name, Licht, Zimmer, Kategorie, Wasser, Luftfeuchte]`. Die Kürzel sind direkt darüber erklärt (`LIGHT`, `ROOM`, `CAT`, `WAT`, `HUM`).
 - Es werden keine Bilder oder Skripte von fremden Seiten geladen; „Foto ansehen“ ist nur ein Link zu Wikimedia Commons.
+- Pflanzenbilder: `bilder/pflanzen/NNN.jpg` (480 × 480 px, Nummer = Position in `DATA`, beginnend bei 001). Neue Nummer zusätzlich in `IMGS` im Script eintragen. Die Bilder sind KI-generiert (Hinweis steht unter der Liste).
