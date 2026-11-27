@@ -144,6 +144,9 @@ main.db button{font:inherit;font-weight:700;font-size:15px;cursor:pointer;border
 main.db button:hover{border-color:var(--ink-2)}
 .db-list{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
 .db-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;display:grid;grid-template-columns:1fr auto;gap:4px 16px}
+.db-item.has-img{grid-template-columns:150px minmax(0,1fr);gap:4px 20px;align-items:start}
+.db-img{grid-row:1/3;width:150px;height:150px;object-fit:cover;border-radius:14px;background:var(--bg)}
+.db-item.has-img .db-facts{grid-column:2}
 .db-name{font-size:20px;line-height:1.25;margin:0}
 .db-sci{font-style:italic;color:var(--muted);margin:0 0 10px}
 .db-foto{align-self:start;font-size:15px;font-weight:600;color:var(--ink-2);white-space:nowrap}
@@ -161,4 +164,7 @@ main.db button:hover{border-color:var(--ink-2)}
   .db-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .db-item{padding:18px;grid-template-columns:minmax(0,1fr)}
   .db-foto{margin-bottom:8px}
+  .db-item.has-img{grid-template-columns:84px minmax(0,1fr);gap:4px 14px}
+  .db-img{grid-row:auto;width:84px;height:84px;border-radius:12px}
+  .db-item.has-img .db-facts{grid-column:1/-1;margin-top:8px}
 }
