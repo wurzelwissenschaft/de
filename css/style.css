@@ -147,7 +147,9 @@ main.db button:hover{border-color:var(--ink-2)}
 .db-item.has-img{grid-template-columns:150px minmax(0,1fr);gap:4px 20px;align-items:start}
 .db-img{grid-row:1/3;width:150px;height:150px;object-fit:cover;border-radius:14px;background:var(--bg)}
 .db-item.has-img .db-facts{grid-column:2}
-.db-name{font-size:20px;line-height:1.25;margin:0}
+.db-item.has-img .db-sci{margin-bottom:4px}
+.db-item.has-img .db-foto{display:inline-block;margin:0 0 10px}
+.db-name{font-size:20px;line-height:1.25;margin:0;overflow-wrap:anywhere;hyphens:auto}
 .db-sci{font-style:italic;color:var(--muted);margin:0 0 10px}
 .db-foto{align-self:start;font-size:15px;font-weight:600;color:var(--ink-2);white-space:nowrap}
 .db-facts{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;gap:5px 16px;margin:0;font-size:16px}

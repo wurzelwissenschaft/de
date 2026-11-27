@@ -53,7 +53,7 @@
   <button class="db-more" id="more" type="button" hidden>Mehr anzeigen</button>
   <noscript><p class="db-empty">Für die Datenbank muss JavaScript im Browser aktiviert sein.</p></noscript>
 
-  <p class="db-note">Alle Angaben sind Richtwerte. Eine Pflanzenlampe ist vor allem im Winter für Pflanzen mit hohem Lichtbedarf empfohlen. Die Pflanzenbilder sind KI-generiert und dienen nur der Veranschaulichung. „Foto ansehen“ öffnet die Bildersuche von Wikimedia Commons (externe Seite).</p>
+  <p class="db-note">Alle Angaben sind Richtwerte. Eine Pflanzenlampe ist vor allem im Winter für Pflanzen mit hohem Lichtbedarf empfohlen. Die Pflanzenbilder sind KI-generiert und dienen nur der Veranschaulichung. „Mehr Fotos“ und „Foto ansehen“ öffnen die Bildersuche von Wikimedia Commons (externe Seite).</p>
 </main>
 
 <footer>
@@ -91,7 +91,7 @@ function item(p){
   const dd2=el("dd",null,L[1]+(r.includes("k")?", kühl (ca. 10–16 °C)":""));
   const dd3=el("dd");[...r].filter(x=>x!=="k").forEach(x=>dd3.append(el("span","db-chip",ROOM[x])));
   dl.append(el("dt",null,"Licht"),dd1,el("dt",null,"Standort"),dd2,el("dt",null,"Zimmer"),dd3,el("dt",null,"Kategorie"),el("dd",null,CAT[c]),el("dt",null,"Wasser"),el("dd",null,WAT[p[5]]),el("dt",null,"Luftfeuchte"),el("dd",null,HUM[p[6]]),el("dt",null,"Pflanzenlampe"),lampDd(p));
-  if(IMGS.has(p[7])){const im=el("img","db-img");im.src="bilder/pflanzen/"+String(p[7]).padStart(3,"0")+".jpg";im.alt=name+" ("+sci+") im Topf";im.width=480;im.height=480;im.loading="lazy";im.decoding="async";li.classList.add("has-img");li.append(im,head,dl);}else li.append(head,a,dl);return li;
+  if(IMGS.has(p[7])){const im=el("img","db-img");im.src="bilder/pflanzen/"+String(p[7]).padStart(3,"0")+".jpg";im.alt=name+" ("+sci+") im Topf";im.width=480;im.height=480;im.loading="lazy";im.decoding="async";li.classList.add("has-img");a.textContent="Mehr Fotos ↗";head.append(a);li.append(im,head,dl);}else li.append(head,a,dl);return li;
 }
 function render(){
   const q=norm($("q").value.trim()),fl=$("fl").value,fr=$("fr").value,fc=$("fc").value,fp=$("fp").value,fw=$("fw").value,fh=$("fh").value;
